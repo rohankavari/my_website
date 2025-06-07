@@ -86,27 +86,35 @@ const App = () => {
         <section ref={workRef} className={styles.snapSection}>
           <div className={styles.sectionContent}>
             <div className={styles.workGrid}>
-              <a
-                href="https://github.com/rohankavari/code_explained"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Code Explainer Extension"
-                className={styles.workSquare}
-              >
+              <div className={styles.workSquare}>
                 <img
                   className={styles.workImage}
                   src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=600&q=80"
                   alt="Nature Image 1"
                 />
-                <h3 className={styles.workTitle}>Code Explainer Extension</h3>
-              </a>
+                <a
+                  href="https://github.com/rohankavari/code_explained"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.workTitleLink}
+                >
+                  <h3 className={styles.workTitle}>Code Explainer Extension</h3>
+                </a>
+              </div>
               <div className={styles.workSquare}>
                 <img
                   className={styles.workImage}
                   src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&h=600&q=80"
                   alt="Nature Image 2"
                 />
-                <h3 className={styles.workTitle}>Personal Language Tutor</h3>
+                <a
+                  href="https://github.com/rohankavari/llm_memory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.workTitleLink}
+                >
+                  <h3 className={styles.workTitle}>LLM Context sync</h3>
+                </a>
               </div>
             </div>
           </div>
