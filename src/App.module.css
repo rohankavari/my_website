@@ -194,17 +194,47 @@
 
 @media (max-width: 700px) {
   .chatCard {
-    padding: 1.5rem 0.5rem;
-    max-width: 98vw;
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
+    min-height: 180px;
+    width: 95vw;
   }
   .chatIcons {
-    gap: 1.1rem;
+    gap: 4rem;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 1rem;
   }
   .chatIcon {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     font-size: 1.3rem;
     border-radius: 0.7rem;
+  }
+  .iconImg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .chatCard {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .chatIcons {
+    gap: 3.5rem;
+    padding: 0 0.5rem;
+  }
+  .chatIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconImg {
+    width: 40px;
+    height: 40px;
   }
 }
 
